@@ -1,0 +1,10 @@
+.reveal-item {
+	opacity: 0;
+	transition: all 1.5s ease-out;
+	transform: scale(1.15); /*transform creates a zoom effect*/
+
+	&--visible {
+		opacity: 1; /*revealed on scroll using waypoints and increasing the opacity to 1*/
+		transform: scale(1);
+	}
+}

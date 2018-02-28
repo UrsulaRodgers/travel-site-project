@@ -1344,6 +1344,22 @@ a {
 		background-position: 36.69752421959096% 45.792307692307695%;
 	}
 
+.reveal-item {
+	opacity: 0;
+	-webkit-transition: all 1.5s ease-out;
+	transition: all 1.5s ease-out;
+	-webkit-transform: scale(1.15);
+	        transform: scale(1.15);
+}
+
+/*transform creates a zoom effect*/
+
+.reveal-item--visible {
+		opacity: 1; /*revealed on scroll using waypoints and increasing the opacity to 1*/
+		-webkit-transform: scale(1);
+		        transform: scale(1);
+	}
+
 
 
 
